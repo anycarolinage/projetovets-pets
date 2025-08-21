@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vets&Pets</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+            <h1 class="site-title">Vets&Pets</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#inicial" class="nav-link active">Inicial</a></li>
+                    <li><a href="#NClinicas" class="nav-link">Clínicas</a></li>
+                    <li><a href="#consulta" class="nav-link">Consulta</a></li>
+                    <li><a href="#castracao" class="nav-link">Castração</a></li>
+                    <li><a href="#seu-pet" class="nav-link">Seu Pet</a></li>
+                    <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                </ul>
+            </nav>
+            <div class="btn-group">
+                <a href="URL_DA_SUA_PAGINA_DE_LOGIN" class="btn-login-link">Entrar</a>
+                <a href="URL_DA_SUA_PAGINA_DE_CADASTRO" class="btn-register-link">Cadastrar</a>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <section id="inicial" class="carousel-section">
+            <div class="carousel-container">
+                <div class="carousel-slide" style="background-image: url('imagens/carrossel1.png');">
+                 
+                </div>
+                <div class="carousel-slide" style="background-image: url('imagens/carrosel2.png');">
+                    
+                </div>
+                <div class="carousel-slide" style="background-image: url('imagens/carrossel3.png');">
+                    
+                </div>
+            </div>
+            <button class="carousel-nav prev">&#10094;</button>
+            <button class="carousel-nav next">&#10095;</button>
+            <div class="carousel-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </section>
+
+      <section id="clinicas" class="content-section">
+    <div class="container">
+        <h2 id="NClinicas">Nossas Clínicas</h2>
+        <p style="color: black;">
+            Dispomos de clínicas modernas e bem equipadas, com profissionais dedicados e qualificados para atender todas as necessidades do seu pet.
+            Encontre a unidade mais próxima de você e agende uma visita.
+        </p>
+        
+        <div class="info-grid">
+
+            <!-- Hospital Veterinário de Bauru -->
+            <div class="grid-item">
+                <img src="imagens/clinica2.png" alt="Clínica Centro">
+                <h3>Hospital Veterinário de Bauru</h3>
+                <p style="color: black;">
+                    Referência regional, o Hospital Veterinário de Bauru oferece atendimento completo, com estrutura moderna e equipe especializada no cuidado de cães e gatos.
+                </p>
+                <p style="color: black;"><strong>Endereço:</strong> Rua André Padilha Sobrinho, 2-86 - Centro, Bauru/SP, 17015-280.</p>
+                <p style="color: black;"><strong>Telefone:</strong> (14) 99714-7626</p>
+                <a href="https://www.google.com/maps?q=Rua+André+Padilha+Sobrinho,+2-86,+Bauru,+SP" 
+                   target="_blank" class="btn-small">Ver no Mapa</a>
+            </div>
+
+            <!-- Clínica Veterinária S.O.S Cães e Gatos -->
+            <div class="grid-item">
+                <img src="imagens/clinica3.png" alt="Clínica Zona Norte">
+                <h3>Clínica Veterinária S.O.S Cães e Gatos</h3>
+                <p style="color: black;">
+                    Com atendimento atencioso e serviços essenciais, a S.O.S Cães e Gatos é uma opção de confiança em Agudos para cuidar da saúde dos pets.
+                </p>
+                <p style="color: black;"><strong>Endereço:</strong> Av. Fernando Machado, 49 - Centro, Agudos - SP, 17120-000</p>
+                <p style="color: black;"><strong>Telefone:</strong> (14) 3261-1279</p>
+                <a href="https://www.google.com/maps?q=Av.+Fernando+Machado,+49,+Agudos,+SP" 
+                   target="_blank" class="btn-small">Ver no Mapa</a>
+            </div>
+
+            <!-- Clínica Veterinária Cão e Cia -->
+            <div class="grid-item">
+                <img src="imagens/clinica1.png" alt="Clínica Zona Sul">
+                <h3>Clínica Veterinária Cão E Cia</h3>
+                <p style="color: black;">
+                    A Cão E Cia oferece consultas, vacinas e procedimentos veterinários em um ambiente acolhedor, priorizando sempre o bem-estar dos animais.
+                </p>
+                <p style="color: black;"><strong>Endereço:</strong> R. Dr. Fábio A. Leite Guimarães, 428 - Centro, Agudos - SP, 17120-000.</p>
+                <p style="color: black;"><strong>Telefone:</strong> (14) 3261-4063</p>
+                <a href="https://www.google.com/maps?q=R.+Dr.+Fábio+A.+Leite+Guimarães,+428,+Agudos,+SP" 
+                   target="_blank" class="btn-small">Ver no Mapa</a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+        <section id="consulta" class="content-section roxo">
+            <div class="container">
+                <h2 style="color: white;">Agende Sua Consulta</h2>
+                <p style="color: white;">Cuidar da saúde do seu pet é essencial. Nossos veterinários são altamente qualificados e oferecem um atendimento personalizado para cada necessidade. Agende uma consulta de rotina, especializada ou para exames.</p>
+                <div class="info-grid">
+                    <div class="grid-item">
+                        <img src="imagens/caesegatos.png" alt="Consulta de Rotina">
+                        <h3>Consulta de Rotina</h3>
+                        <p>Check-ups anuais para monitorar a saúde do seu pet, atualizar vacinas e prevenir doenças. Fundamental para uma vida longa e saudável.</p>
+                        <a href="consulta.html" class="btn-small">Detalhes</a>
+                    </div>
+                    <div class="grid-item">
+                        <img src="imagens/especialidade.png" alt="Especialidades Veterinárias">
+                        <h3>Especialidades</h3>
+                        <p>Oferecemos atendimento em diversas especialidades, como cardiologia, dermatologia, oncologia e ortopedia. Cuidado especializado para casos complexos.</p>
+                        <a href="especialidade.html" class="btn-small">Ver Especialidades</a>
+                    </div>
+                    <div class="grid-item">
+                        <img src="imagens/exames.png" alt="Exames Diagnósticos">
+                        <h3>Exames Diagnósticos</h3>
+                        <p>Disponibilizamos uma ampla gama de exames laboratoriais e de imagem (raio-x, ultrassom) para um diagnóstico preciso e rápido. Resultados confiáveis para o melhor tratamento.</p>
+                        <a href="exames.html" class="btn-small">Ver Exames</a>
+                    </div>
+                </div>
+                <a href="#" class="btn" style="margin-top: 40px;">Agendar Consulta Online</a>
+            </div>
+        </section>
+   
+
+        <section id="castracao" class="content-section">
+            <div class="container">
+                <h2>Serviço de Castração</h2>
+                <p style="color: black;">A castração é um ato de amor e responsabilidade, contribuindo significativamente para a saúde e o bem-estar do seu animal. Nossos procedimentos são seguros, realizados por veterinários experientes em um ambiente esterilizado.</p>
+                <div class="info-grid">
+                    <div class="grid-item">
+                        <img src="imagens/cast1.png" alt="Benefícios da Castração">
+                        <h3>Benefícios</h3>
+                        <p style="color: black;">Reduz o risco de certas doenças, previne cios indesejados, diminui a agressividade e o hábito de demarcação de território. Um pet castrado tende a ser mais calmo e saudável.</p>
+                        <a href="benificios.html" class="btn-small">Saiba Mais</a>
+                    </div>
+                    <div class="grid-item">
+                        <img src="imagens/cast2.png" alt="O Procedimento">
+                        <h3>O Procedimento</h3>
+                        <p style="color: black;">Realizamos a cirurgia com anestesia segura, monitoramento constante e recuperação cuidadosa, minimizando o estresse e a dor. Todo o processo é explicado detalhadamente aos tutores.</p>
+                        <a href="procedimento.html" class="btn-small">Etapas</a>
+                    </div>
+                    <div class="grid-item">
+                        <img src="imagens/cast3.png" alt="Pós-Operatório">
+                        <h3>Pós-Operatório</h3>
+                        <p style="color: black;">Oferecemos acompanhamento pós-operatório completo, com orientações sobre os cuidados em casa, medicação e retorno para avaliação. Nosso suporte continua após a cirurgia.</p>
+                        <a href="operatorio.html" class="btn-small">Orientações</a>
+                    </div>
+                </div>
+                <a href="castracao.html" class="btn" style="margin-top: 40px;">Agendar Castração </a>
+            </div>
+        </section>
+
+        <section id="seu-pet" class="content-section roxo">
+            <div class="container">
+                <h2 style="color: white;">Seu Pet</h2>
+                <p style="color: white;">Um espaço dedicado a você e seu animal. Encontre dicas de alimentação, comportamento, treinamento, curiosidades sobre diferentes raças e uma seleção de produtos essenciais para cada fase da vida do seu pet. Navegue por categorias ou explore nossos artigos.</p>
+                <div class="info-grid">
+                    <div class="grid-item">
+                        <img src="imagens/alimen1.png" alt="Alimentação Saudável">
+                        <h3>Alimentação Saudável</h3>
+                        <p>Descubra as melhores rações e dietas para a idade, porte e necessidades especiais do seu pet. Artigos sobre nutrição, petiscos e alergias.</p>
+                        <a href="alimentação.html" class="btn-small">Ver Dicas</a>
+                    </div>
+                    <div class="grid-item">
+                        <img src="imagens/alimen2.png" alt="Brinquedos e Acessórios">
+                        <h3>Brinquedos e Acessórios</h3>
+                        <p>Uma vasta seleção de brinquedos para estimular o físico e a mente, além de guias, coleiras, caminhas e tudo para o conforto do seu amigo.</p>
+                        <a href="brinquedos.html" class="btn-small">Explorar Produtos</a>
+                    </div>
+                    <div class="grid-item">
+                        <img src="imagens/alimen3.png" alt="Comportamento e Treinamento">
+                        <h3>Comportamento e Treinamento</h3>
+                        <p>Entenda melhor seu pet com artigos sobre comportamento, treinamento básico, socialização e como lidar com desafios comuns.</p>
+                        <a href="comportamento.html" class="btn-small">Artigos</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre" class="content-section">
+            <div class="container">
+                <h2>Sobre Nós</h2>
+                <p style="color: black;">Missão
+                    Proporcionar cuidado completo, acessível e confiável para pets de pequeno e grande porte, conectando tutores
+                    a profissionais especializados. Nosso objetivo é facilitar o acompanhamento da saúde dos animais por meio
+                    de uma plataforma prática e informativa, oferecendo acesso rápido a veterinários, horários de atendimento,
+                    histórico médico, lembretes de vacinas, dicas de bem-estar e informações transparentes sobre procedimentos
+                    e custos.<br>
+                    Visão<br>
+                    Ser a principal referência digital em serviços veterinários, tornando o cuidado com os animais mais simples,
+                    próximo e eficiente. Queremos transformar a experiência dos tutores com a saúde pet, promovendo uma
+                    comunidade mais consciente, conectada e comprometida com o bem-estar animal.<br>
+                    Valores<br>
+                    Cuidado com Empatia: Tratamos cada pet como parte da família, com atenção e carinho em cada detalhe.
+                    Transparência: Divulgamos de forma clara os valores dos serviços e as informações sobre cada procedimento.</p></div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <strong><p>&copy; 2025 Vets & Pets. Todos os direitos reservados.</p></strong>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Lógica para o Carrossel
+            const carouselContainer = document.querySelector('.carousel-container');
+            const slides = document.querySelectorAll('.carousel-slide');
+            const prevBtn = document.querySelector('.carousel-nav.prev');
+            const nextBtn = document.querySelector('.carousel-nav.next');
+            const dotsContainer = document.querySelector('.carousel-dots');
+            const dots = document.querySelectorAll('.dot');
+            let currentIndex = 0;
+            let autoPlayInterval;
+
+            const updateCarousel = () => {
+                const offset = -currentIndex * 100;
+                carouselContainer.style.transform = `translateX(${offset}%)`;
+
+                // Atualizar pontos
+                dots.forEach((dot, index) => {
+                    dot.classList.toggle('active', index === currentIndex);
+                });
+            };
+
+            const goToSlide = (index) => {
+                currentIndex = index;
+                if (currentIndex >= slides.length) {
+                    currentIndex = 0;
+                } else if (currentIndex < 0) {
+                    currentIndex = slides.length - 1;
+                }
+                updateCarousel();
+            };
+
+            const nextSlide = () => {
+                goToSlide(currentIndex + 1);
+            };
+
+            const prevSlide = () => {
+                goToSlide(currentIndex - 1);
+            };
+
+            // Event Listeners para botões
+            nextBtn.addEventListener('click', nextSlide);
+            prevBtn.addEventListener('click', prevSlide);
+
+            // Event Listeners para os pontos
+            dots.forEach((dot, index) => {
+                dot.addEventListener('click', () => goToSlide(index));
+            });
+
+            // Auto-play (opcional)
+            const startAutoPlay = () => {
+                autoPlayInterval = setInterval(nextSlide, 5000); // Mudar a cada 5 segundos
+            };
+
+            const stopAutoPlay = () => {
+                clearInterval(autoPlayInterval);
+            };
+
+            // Pausar auto-play no hover
+            carouselContainer.addEventListener('mouseenter', stopAutoPlay);
+            carouselContainer.addEventListener('mouseleave', startAutoPlay);
+
+            // Inicializar carrossel
+            updateCarousel();
+            startAutoPlay(); // Inicia o auto-play
+
+            // Lógica para Destacar Link Ativo e Rolagem Suave
+            const navLinks = document.querySelectorAll('nav ul li a.nav-link');
+            const sections = document.querySelectorAll('main section');
+            const headerHeight = document.querySelector('header').offsetHeight; // Altura do cabeçalho fixo
+
+            const removeActiveClass = () => {
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                });
+            };
+
+            const addActiveClass = (id) => {
+                const activeLink = document.querySelector(`nav ul li a[href="#${id}"]`);
+                if (activeLink) {
+                    removeActiveClass();
+                    activeLink.classList.add('active');
+                }
+            };
+
+            // Rolagem suave ao clicar nos links de navegação
+            navLinks.forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetSection = document.getElementById(targetId);
+
+                    if (targetSection) {
+                        window.scrollTo({
+                            top: targetSection.offsetTop - (headerHeight + 20), // Ajuste para o cabeçalho fixo + um pequeno espaçamento
+                            behavior: 'smooth'
+                        });
+                        // Não adiciona active aqui, deixa o IntersectionObserver fazer isso para evitar conflitos
+                        // addActiveClass(targetId);
+                    }
+                });
+            });
+
+            // Observador para destacar link ativo ao rolar a página
+            const observerOptions = {
+                root: null,
+                rootMargin: `-${headerHeight + 1}px 0px 0px 0px`, // Margem negativa para disparar quando a seção atinge o topo abaixo do header
+                threshold: 0.3 // Destaca quando 30% da seção está visível abaixo do header
+            };
+
+            const sectionObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        addActiveClass(entry.target.id);
+                    }
+                });
+            }, observerOptions);
+
+            sections.forEach(section => {
+                sectionObserver.observe(section);
+            });
+
+            // Adicionar 'active' na inicialização se já estiver nela
+            const initialSection = document.getElementById('inicial');
+            if (initialSection && initialSection.getBoundingClientRect().top < window.innerHeight) {
+                addActiveClass('inicial');
+            }
+        });
+    </script>
+</body>
+</html>

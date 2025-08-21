@@ -1,0 +1,325 @@
+/* Seu CSS existente */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333;
+    line-height: 1.7;
+    scroll-behavior: smooth;
+}
+
+.content-section.roxo {
+    background-color: #5B006B; 
+    color: #ffffff; 
+}
+
+/* Este bloco não é mais necessário se a cor do texto do parágrafo for controlada por .content-section p */
+/* .content-section.roxo p {
+    color: #000000; 
+} */
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+    gap: 20px; 
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.site-icon {
+    height: 40px;
+    width: auto;
+}
+
+.site-title {
+    margin: 0;
+    font-size: 2em;
+    color: #8a2be2; 
+    font-weight: 700;
+    white-space: nowrap;
+    
+}
+
+nav {
+    margin-left: auto; 
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li a {
+    color: #555;
+    font-weight: 600;
+    padding: 5px 0;
+    position: relative;
+    transition: color 0.3s ease;
+    line-height: 1.5;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: #8a2be2;
+    transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after,
+nav ul li a.active::after {
+    width: 100%;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: #8a2be2;
+}
+
+
+main {
+    padding-top: 20px;
+}
+
+/* Atualizado para centralizar todos os h2 dentro de content-section */
+.content-section {
+    background-color: #ffffff;
+    padding: 60px 0;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    /* Remover text-align: center; daqui se você quiser que os parágrafos não sejam centralizados */
+}
+
+
+/* ESTE É O BLOCO MAIS IMPORTANTE PARA SEUS TÍTULOS */
+.content-section h2 {
+    font-size: 2.5em; /* Tamanho da fonte, você pode ajustar se achar muito grande/pequeno */
+    color: #4a148c; /* Cor roxa escura, como na imagem */
+    margin-bottom: 20px; /* Espaço abaixo do título */
+    text-align: center; /* Centraliza o texto do título */
+    position: relative; /* Necessário para posicionar a linha com ::after */
+    display: inline-block; /* Faz o elemento se comportar como bloco, mas permite que o texto se adapte */
+    padding-bottom: 10px; /* Espaço entre o texto e a linha */
+    font-weight: 700; /* Adicionei ou garanti que esteja em negrito forte */
+}
+
+.content-section h2::after {
+    content: '';
+    position: absolute;
+    left: 50%; /* Centraliza a linha horizontalmente */
+    transform: translateX(-50%); /* Ajuste fino para a centralização da linha */
+    bottom: 0; /* Alinha a linha na parte inferior do padding-bottom */
+    width: 80px; /* Largura da linha */
+    height: 3px; /* Espessura da linha */
+    background-color: #8a2be2; /* Cor roxa da linha, como na imagem */
+    border-radius: 2px; /* Borda arredondada para a linha */
+}
+
+.content-section p {
+    font-size: 1.1em;
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+    color: #666;
+    line-height: 1.8;
+    text-align: left; /* Garante que os parágrafos voltem a ser justificados à esquerda */
+}
+
+.dot {
+    height: 12px;
+    width: 12px;
+    margin: 0 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.dot.active {
+    background-color: #ffffff;
+    border-color: #ffffff;
+}
+
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.grid-item {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+    padding: 25px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bg-purple-light .grid-item {
+    background-color: #ffffff;
+}
+
+.grid-item img {
+    max-width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.grid-item:hover img {
+    transform: scale(1.03);
+}
+
+.grid-item h3 {
+    font-size: 1.5em;
+    color: #4a148c;
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: left;
+    position: relative;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.grid-item h3::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 60px;
+    height: 3px;
+    background-color: #8a2be2;
+    border-radius: 2px;
+}
+
+.bg-purple-light h2 {
+    color: #4a148c;
+}
+
+.bg-purple-light p {
+    color: #333;
+}
+
+.grid-item p {
+    font-size: 0.95em;
+    color: #555;
+    margin-bottom: 20px;
+    text-align: left;
+    flex-grow: 1;
+    line-height: 1.6;
+}
+
+footer {
+    background-color: #333;
+    color: #f8f8f8;
+    text-align: center;
+    padding: 25px 0;
+    font-size: 0.9em;
+    margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
+    }
+    .header-left {
+        width: 100%;
+        justify-content: center;
+    }
+    nav {
+        width: 100%;
+        text-align: center;
+        margin-left: 0; 
+    }
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+    .site-title {
+        font-size: 1.8em;
+    }
+    .carousel-slide {
+        height: 350px;
+    }
+    /* .carousel-overlay h3 { - Removido pois não existe mais no HTML */
+    /* font-size: 2em; */
+    /* } */
+    /* .carousel-overlay p { - Removido pois não existe mais no HTML */
+    /* font-size: 1em; */
+    /* } */
+    .content-section h2 { /* Aplica ao h2 dentro de content-section */
+        font-size: 2em;
+    }
+    .content-section, .carousel-section {
+        padding: 40px 0;
+    }
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+    .grid-item {
+        padding: 20px;
+    }
+    .grid-item h3 {
+        text-align: center;
+    }
+    .grid-item h3::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .grid-item p {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul li a {
+        font-size: 0.9em;
+
+    
+    }
+}
+
