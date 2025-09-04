@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #7b2cbf, #ff6ec7);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .wrapper {
+      display: flex;
+      width: 90%;
+      max-width: 1000px;
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+    .left {
+      flex: 1;
+      background: linear-gradient(135deg, #7b2cbf, #ff6ec7);
+      color: white;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .left h1 {
+      font-size: 28px;
+      margin-bottom: 15px;
+    }
+    .left p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    .right {
+      flex: 1;
+      padding: 40px;
+      background: #fff;
+    }
+    .tabs {
+      display: flex;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #eee;
+    }
+    .tabs button {
+      flex: 1;
+      padding: 12px;
+      border: none;
+      background: #f0f0f0;
+      color: #333;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .tabs button.active {
+      background: #7b2cbf;
+      color: #fff;
+    }
+    .tab-content {
+      display: none;
+      animation: fadeIn 0.3s ease-in-out;
+    }
+    .tab-content.active {
+      display: block;
+    }
+    .input-group {
+      position: relative;
+      margin-bottom: 15px;
+    }
+    .input-group i {
+      position: absolute;
+      top: 50%;
+      left: 12px;
+      transform: translateY(-50%);
+      color: #7b2cbf;
+    }
+    .input-group input {
+      width: 100%;
+      padding: 12px 12px 12px 40px;
+      border: 1px solid #ccc;
+      border-radius: 30px;
+      font-size: 14px;
+      background: #f9f7fc;
+    }
+    form button {
+      padding: 12px;
+      background: linear-gradient(135deg, #7b2cbf, #ff6ec7);
+      border: none;
+      border-radius: 30px;
+      color: #fff;
+      font-size: 15px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: opacity 0.3s;
+    }
+    form button i {
+      margin-right: 6px;
+    }
+    form button:hover {
+      opacity: 0.9;
+    }
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="left">
+      <h1>Bem-vindo(a) ao Vets&Pets</h1>
+      <p>Cadastre-se como Tutor, Veterinário ou Clínica e tenha acesso a serviços exclusivos. Já possui uma conta? Faça login para continuar.</p>
+    </div>
+
+    <div class="right">
+      <div class="tabs">
+        <button class="tab-link active" onclick="openTab(event, 'tutor')">Tutor</button>
+        <button class="tab-link" onclick="openTab(event, 'veterinario')">Veterinário</button>
+        <button class="tab-link" onclick="openTab(event, 'clinica')">Clínica</button>
+      </div>
+
+      <!-- Cadastro Tutor -->
+      <div id="tutor" class="tab-content active">
+        <form>
+          <div class="input-group"><i class="fa fa-user"></i><input type="text" placeholder="Nome"></div>
+          <div class="input-group"><i class="fa fa-envelope"></i><input type="email" placeholder="Email"></div>
+          <div class="input-group"><i class="fa fa-lock"></i><input type="password" placeholder="Senha"></div>
+          <div class="input-group"><i class="fa fa-lock"></i><input type="password" placeholder="Confirmar Senha"></div>
+          <div class="input-group"><i class="fa fa-phone"></i><input type="text" placeholder="Telefone"></div>
+          <div class="input-group"><i class="fa fa-id-card"></i><input type="text" placeholder="CPF"></div>
+          <div class="input-group"><i class="fa fa-home"></i><input type="text" placeholder="Endereço"></div>
+          <div class="input-group"><i class="fa fa-city"></i><input type="text" placeholder="Cidade e Estado"></div>
+          <button><i class="fa fa-user-plus"></i>Cadastrar Tutor</button>
+        </form>
+      </div>
+
+      <!-- Cadastro Veterinário -->
+      <div id="veterinario" class="tab-content">
+        <form>
+          <div class="input-group"><i class="fa fa-user-md"></i><input type="text" placeholder="Nome"></div>
+          <div class="input-group"><i class="fa fa-envelope"></i><input type="email" placeholder="Email"></div>
+          <div class="input-group"><i class="fa fa-lock"></i><input type="password" placeholder="Senha"></div>
+          <div class="input-group"><i class="fa fa-lock"></i><input type="password" placeholder="Confirmar Senha"></div>
+          <div class="input-group"><i class="fa fa-phone"></i><input type="text" placeholder="Telefone"></div>
+          <div class="input-group"><i class="fa fa-id-card"></i><input type="text" placeholder="CPF"></div>
+          <div class="input-group"><i class="fa fa-home"></i><input type="text" placeholder="Endereço"></div>
+          <div class="input-group"><i class="fa fa-city"></i><input type="text" placeholder="Cidade e Estado"></div>
+          <div class="input-group"><i class="fa fa-certificate"></i><input type="text" placeholder="CRMV"></div>
+          <div class="input-group"><i class="fa fa-clinic-medical"></i><input type="text" placeholder="Clínica Filiada"></div>
+          <button><i class="fa fa-user-plus"></i>Cadastrar Veterinário</button>
+        </form>
+      </div>
+
+      <!-- Cadastro Clínica -->
+      <div id="clinica" class="tab-content">
+        <form>
+          <div class="input-group"><i class="fa fa-hospital"></i><input type="text" placeholder="Nome da Clínica"></div>
+          <div class="input-group"><i class="fa fa-envelope"></i><input type="email" placeholder="Email"></div>
+          <div class="input-group"><i class="fa fa-lock"></i><input type="password" placeholder="Senha"></div>
+          <div class="input-group"><i class="fa fa-lock"></i><input type="password" placeholder="Confirmar Senha"></div>
+          <div class="input-group"><i class="fa fa-phone"></i><input type="text" placeholder="Telefone"></div>
+          <div class="input-group"><i class="fa fa-id-badge"></i><input type="text" placeholder="Código de Registro"></div>
+          <div class="input-group"><i class="fa fa-home"></i><input type="text" placeholder="Endereço"></div>
+          <div class="input-group"><i class="fa fa-city"></i><input type="text" placeholder="Cidade e Estado"></div>
+          <button><i class="fa fa-user-plus"></i>Cadastrar Clínica</button>
+        </form>
+      </div>
+
+    
+    </div>
+  </div>
+
+  <script>
+    function openTab(evt, tabName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tab-content");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tab-link");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(tabName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      document.getElementById("tutor").style.display = "block";
+    });
+  </script>
+</body>
+</html>
